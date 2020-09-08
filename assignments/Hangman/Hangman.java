@@ -45,12 +45,12 @@ public class Hangman {
  		private void setplayWord() {
  			
  			System.out.println("Wordy, enter the play word: ");			
- 			String inputplayWord = sc.nextLine(); 	
+ 			String inputplayWord = sc.nextLine().toLowerCase(); 	
  			
  			while( 	inputplayWord.length() < 6  || inputplayWord.length() > 29 ) { 				
  				    
  				    System.out.println("Please try again");
- 				    inputplayWord = sc.nextLine();  				  
+ 				    inputplayWord = sc.nextLine().toLowerCase();  				  
  			} 			
  			playWord = inputplayWord; 			
  		}
@@ -60,11 +60,11 @@ public class Hangman {
  		private void setGuessingChar() {
  			
  			System.out.println("Hangy, choose a letter:  "); 			
- 			String guessInput = sc.nextLine();
+ 			String guessInput = sc.nextLine().toLowerCase();
  			// needs input, can not leave blank
  			while(guessInput.isBlank()) {
 				    System.out.println("Incorrect, please try again");
-				    guessInput = sc.nextLine();  
+				    guessInput = sc.nextLine().toLowerCase();  
  			}
  			guessingChar = guessInput.charAt(0); 			
  		}
