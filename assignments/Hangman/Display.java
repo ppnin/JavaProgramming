@@ -47,7 +47,8 @@ public class Display {
 			                    + "\n                                                               ",
 		                          "\n RULES:                                                         "
 					            + "\n  - There are two players, Wordy and Hangy                      "
-					            + "\n  - Wordy chooses a word or sentence (7 to 30 characters)       "
+					            + "\n  - Wordy chooses a word or sentence (7 to 30 characters, only  "
+						    + "\n    lower case allowed )                                        "
 					            + "\n  - The word (sentence) is shown as a dashed line (one dash per "
 					            + "\n    character)                                                  "
 					            + "\n  - Hangy tries to find out the word, by guessing one letter    "
